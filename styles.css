@@ -1,0 +1,217 @@
+/* Normalizacion css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: whitesmoke;
+}
+
+li {
+    list-style: none;
+}
+
+ol, ul {
+    padding: 0;
+}
+
+body{
+    background-color: rgb(36, 35, 35);
+}
+
+hr{
+   border-width: 5px;
+}
+
+
+
+/* BANNER */
+
+.banner-container img{
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    z-index: 0;
+    position: relative;
+    display: block;
+    filter: blur(2px);
+    
+}
+
+.banner-content{
+    width: 100%;
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.banner-content h1{
+    font-size: 50px;
+}
+
+
+.banner-content h1,
+.banner-content h2,
+.banner-content button {
+    margin: 10px 0;
+    text-shadow: 4px 2px 4px rgba(56, 43, 43, 0.5);
+    
+}
+
+
+/* BUSCADOR */
+
+.buscador{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+}
+
+
+/* TENDENCIAS */
+
+.preview img{
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+/* MAS ACLAMADAS */
+
+.contenedor_flex{ 
+    display:flex;
+    overflow-x: auto;
+    padding: 5em 3em 4em ;
+    gap: 2em;
+    align-content: center;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #2f3031; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(#ec4545,#df5a5a,#eb5252);
+    border-radius: 0.2em;
+  }
+ 
+
+.contenedor_flex > div{
+    width: 100%;
+    height: 100%;
+}
+
+.caja{
+width: 200px;
+height: 300px;
+object-fit: cover;
+border-radius: 2px;
+transition: transform 0.5s; 
+animation: lineacolor 2s infinite; 
+}
+
+.caja:hover{
+    transform: scale(1.08);
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: #df5a5a;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERYS */
+
+@media screen and (min-width : 0px) and (max-width : 320px){
+
+    /* BANNER */
+
+        .banner-container img{
+            width: 100%; 
+            height: 400px;           
+        }    
+
+
+        .banner-content{
+            width: 100%;
+            position: absolute;
+            top:55%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            font-weight: bolder;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;            
+        }
+        
+        .banner-content h1
+       {
+            font-size: 13px !important;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .banner-content h2
+        {
+             font-size: 20px !important;
+             text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);             
+         }     
+
+}
+
+
+@media screen and (min-width : 0px) and (max-width : 768px){
+
+    /* BANNER */
+
+    .banner-container img{
+        width: 100%; 
+        height: 550px;           
+    }  
+    
+    .banner-content{
+        top: 60%;
+    }
+
+
+    .banner-content h1
+    {
+        
+         font-size: 45px !important;
+         text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+     }
+
+     .banner-content {
+        width: 80%;
+     }
+
+
+}

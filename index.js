@@ -25,9 +25,9 @@ const getAndPaintMovies = () => {
                 const template = `
                     <div class="col-lg-3 col-md-6 col-12 mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img src="${movie.Poster}" class="card-img-top" alt="...">
+                        <a href="/detail.html" target="_blank"><img src="${movie.Poster}" class="card-img-top" alt="..."></a>
                             <div class="card-body">
-                                <p class="card-text">${movie.Title}</p>
+                            <a href="${movie.Trailer}" target="_blank"><p class="card-text fw-bold text-center text-dark">${movie.Title} <i class="fa-brands fa-youtube text-danger "></i></p></a>
                             </div>
                         </div>
                     </div>

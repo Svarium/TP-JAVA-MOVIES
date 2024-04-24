@@ -12,6 +12,7 @@
     <link href="
 https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.min.css
 " rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -19,7 +20,7 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.min.css
     <main>
 
         <!-- FORMULARIO DE LOGIN -->
-        <div class="container">
+        <div class="container" data-aos="fade-down" data-aos-duration="2000">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-12 col-lg-6">
                     <form class="bg-dark text-white py-3 m-5 p-5 shadow rounded-3" id="registroForm">
@@ -170,6 +171,11 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.min.css
     <script src="
 https://cdn.jsdelivr.net/npm/sweetalert2@11.10.8/dist/sweetalert2.all.min.js
 "></script>
+ <!-- AOS ANIMATION -->
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+   AOS.init();
+ </script>
 
 </body>
 

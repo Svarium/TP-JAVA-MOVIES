@@ -23,7 +23,7 @@ const getAndPaintMovies = () => {
             card.innerHTML = '';
             moviesToDisplay.forEach((movie) => { //itero el array para generar la plantilla por cada pelicula
                 const template = `
-                    <div class="col-lg-3 col-md-6 col-12 mb-4">
+                    <div class="col-lg-3 col-md-6 col-10 mb-4">
                         <div class="card" style="width: 18rem;">
                         <a href="/detail.html" target="_blank"><img src="${movie.Poster}" class="card-img-top" alt="..."></a>
                             <div class="card-body">

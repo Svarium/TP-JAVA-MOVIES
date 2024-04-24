@@ -1,0 +1,39 @@
+/* Normalizacion css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: whitesmoke;
+}
+
+li {
+    list-style: none;
+}
+
+ol, ul {
+    padding: 0;
+}
+
+body{
+    background-color: rgb(36, 35, 35);
+}
+
+hr{
+   border-width: 5px;
+}
+
+body{
+    background: url('/images/1154.jpg');
+    background-repeat:repeat;
+    background-size: 40%;
+    background-attachment:fixed;
+}
